@@ -626,6 +626,7 @@ services:
     volumes:
       - ./volumes/sandbox/dependencies:/dependencies
       - ./volumes/sandbox/conf:/conf
+      - ./volumes/sandbox/file:/var/sandbox/sandbox-python/tmp/file:rw
     healthcheck:
       test: [ 'CMD', 'curl', '-f', 'http://localhost:8194/health' ]
     networks:
