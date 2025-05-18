@@ -1,0 +1,14 @@
+{
+  "segment_01": {
+    "text": "{B (Octal SPI) –40 ∼ 65 1.8 VnESP32-S3FH4R2 4 MB (Quad SPI) 2 MB (Quad SPI) –40 ∼ 85 3.3 Vn1 更多关于芯片丝印和包装的信息，请参考章节 7 封装。n2 默认情况下，芯片 SPI flash 支持的最大时钟频率为 80 MHz，且不支持自动暂停功能。如需使用 120nMHz 的 flash 时钟频率或需要 flash 自动暂停功能，请 联系我们。n3 环境温度指乐鑫芯片外部的推荐环境温度。针对内置 Octal SPI PSRAM 的芯片（ESP32-S3R8ESP32-nS3R8V 和 ESP32-S3R16V），若开启 PSRAM ECC 功能，最大环境温度可以提高到 85 °C，但是 PSRAMn的可用容量将减少 116。n4 更多关于 VDD_SPI 的信息，请参考章节 2.5 电源。n5 更多关于 SPI 模式的信息，请参考章节 2.6 芯片与 FlashPSRAM 的管脚对应关系。",
+    "tags": ["ESP32-S3FH4R2","4 MB (Quad SPI)","2 MB (Quad SPI)","SPI flash","80 MHz","自动暂停功能","120 MHz","PSRAM ECC","85 °C","VDD_SPI","SPI模式","芯片与 FlashPSRAM 的管脚对应关系","ESP32-S3系列芯片的SPI flash规格有哪些","如何提高ESP32-S3芯片的环境温度限制","ESP32-S3芯片的PSRAM容量减少机制是什么"]
+  },
+  "segment_02": {
+    "text": "乐鑫信息科技 13n反馈文档意见nESP32-S3 系列芯片技术规格书 v2.02 管脚n2 管脚n2.1 管脚布局n1n2n3n4n5n6n7n8n9n29n30n31n32n33n34n35n36n37n38n39n40n41n42n15161718192021222324252628n5655545352515049484746454443nESP32-S3n13n14n10n11n12nGPIO20n27nGPIO17GPIO18GPIO19GPIO21nXTAL_32K_PnXTAL_32K_NnVDD3P3_RTCnGPIO10GPIO11GPIO12GPIO13GPIO14nGPIO9nGPIO8nGPIO7nGPIO6nGPIO5nGPIO4nGPIO3nGPIO2nGPIO1nGPIO0nCHIP_PUnVDD3P3nVDD3P3nLNA_INnVDDAVDDAXTAL_PXTAL_NGPIO46GPIO45U0RXDU0TXDMTMSMTDIVDD3P3_CPUMTDOMTCKGPIO38nGPIO37nGPIO36nGPIO35nGPIO34nGPIO33nSPICLK_PnSPIDnSPIQnSPICLKnSPICS0nSPIWPnSPIHDnVDD_SPIn57 GNDnSPICS1nSPICLK_Nn图 2-1. ESP32-S3 管脚布局（俯视图）",
+    "tags": ["ESP32-S3","管脚布局","GPIO20","GPIO17","GPIO18","GPIO19","GPIO21","XTAL_32K_P","XTAL_32K_N","VDD3P3_RTC","GPIO10","GPIO11","GPIO12","GPIO13","GPIO14","GPIO9","GPIO8","GPIO7","GPIO6","GPIO5","GPIO4","GPIO3","GPIO2","GPIO1","GPIO0","CHIP_PU","VDD3P3","LNA_IN","VDDA","XTAL_P","XTAL_N","GPIO46","GPIO45","U0RXD","U0TXD","MTMS","MTDI","VDD3P3_CPU","MTDO","MTCK","GPIO38","GPIO37","GPIO36","GPIO35","GPIO34","GPIO33","SPICLK_P","SPID","SPIQ","SPICLK","SPICS0","SPIWP","SPIHD","VDD_SPI","GND","SPICS1","SPICLK_N","ESP32-S3的管脚布局是怎样的","如何识别ESP32-S3芯片的GPIO管脚","ESP32-S3管脚布局图中的关键电源管脚有哪些"]
+  },
+  "segment_03": {
+    "text": "乐鑫信息科技 14n反馈文档意见nESP32-S3 系列芯片技术规格书 v2.02 管脚n2.2 管脚概述nESP32-S3 芯片集成了多个需要与外界通讯的外设。由于芯片封装尺寸小管脚数量有限，传送所有输入输出信n号的唯一方法是管脚多路复用。管脚多路复用由软件可编程的寄存器控制（详见 《ESP32-S3 技术参考手册》n> 章节 IO MUX 和 GPIO 交换矩阵）。n总体而言，ESP32-S3 芯片的管脚可分为以下几类n• IO 管脚，具有以下预设功能n– 每个 IO 管脚都预设了 IO MUX 功能 – 见表 2-4 IO MUX 管脚功能n– 部分 IO 管脚预设了 RTC 功能 – 见表 2-6 RTC 功能n– 部分 IO 管脚预设了模拟功能 – 见表 2-8 模拟功能n预设功能即每个 IO 管脚直接连接至一组特定的片上外设。运行时，可通过映射寄存器配置连接管脚的外n设（详见 《ESP32-S3 技术参考手册》 > 章节 IO MUX 和 GPIO 交换矩阵）。",
+    "tags": ["ESP32-S3","管脚概述","管脚多路复用","IO MUX","GPIO 交换矩阵","IO 管脚","RTC 功能","模拟功能","映射寄存器","片上外设","ESP32-S3的管脚多路复用是如何工作的","IO MUX功能在ESP32-S3中的应用场景","如何通过软件配置ESP32-S3的管脚功能"]
+  }
+}
